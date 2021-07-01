@@ -16,9 +16,18 @@ function alterarLetrasParaMaiusculas(tag) {
   }
 }
 
+function mostrarConteudoNoConsle(tag) {
+  const elementos = document.getElementsByTagName(tag);
+
+  for (let i = 0; i < elementos.length; i++) {
+    console.log(elementos[i].innerHTML);
+  }
+}
+
 
 adicionarConteudo('textP', 'Olá, eu me chamo Luana Eugênia, eeee Tô na Trybe!')
 alterarBackground('main-content', 'rgb(76,164,109)');
 alterarBackground('center-content', '#ffffff');
 adicionarConteudo('title', 'Exercício 5.1 - Javascript');
 alterarLetrasParaMaiusculas('p');
+mostrarConteudoNoConsle('p');
