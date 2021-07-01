@@ -8,8 +8,17 @@ function alterarBackground(id, cor) {
   elemento.style.backgroundColor = cor
 }
 
+function alterarLetrasParaMaiusculas(tag) {
+  const elementos = document.getElementsByTagName(tag);
+
+  for (let i = 0; i < elementos.length; i += 1) {
+    elementos[i].style.textTransform = 'uppercase';
+  }
+}
+
 
 adicionarConteudo('textP', 'Olá, eu me chamo Luana Eugênia, eeee Tô na Trybe!')
 alterarBackground('main-content', 'rgb(76,164,109)');
 alterarBackground('center-content', '#ffffff');
-adicionarConteudo('title', 'Javascript');
+adicionarConteudo('title', 'Exercício 5.1 - Javascript');
+alterarLetrasParaMaiusculas('p');
