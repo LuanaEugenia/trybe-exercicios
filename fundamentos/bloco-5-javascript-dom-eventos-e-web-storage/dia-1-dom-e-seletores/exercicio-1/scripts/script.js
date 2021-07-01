@@ -8,5 +8,7 @@ function alterarBackground(id, cor) {
   elemento.style.backgroundColor = cor
 }
 
+
 adicionarConteudo('textP', 'Olá, eu me chamo Luana Eugênia, eeee Tô na Trybe!')
 alterarBackground('main-content', 'rgb(76,164,109)');
+alterarBackground('center-content', '#ffffff');
