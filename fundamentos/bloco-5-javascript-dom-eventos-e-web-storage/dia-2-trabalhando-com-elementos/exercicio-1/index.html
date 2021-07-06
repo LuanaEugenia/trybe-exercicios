@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+        div {
+            border-color: black;
+            border-style: solid;
+        }
+
+        .title {
+            text-align: center;
+        }
+
+        .main-content {
+            background-color: yellow;
+        }
+
+        .main-content .center-content {
+            background-color: red;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .main-content .center-content p {
+            font-style: italic;
+        }
+
+        .main-content .left-content {
+            background-color: green;
+            width: 60%;
+            margin-left: 0;
+            margin-right: auto;
+        }
+
+        .main-content .left-content .small-image {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 100%;
+        }
+
+        .main-content .right-content {
+            background-color: blue;
+            width: 60%;
+            margin-left: auto;
+            margin-right: 0;
+        }
+
+        .main-content .description {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <script>
+        //Requisito - 1
+        const elementoBody = document.body;
+
+        const elementoH1 = document.createElement('h1');
+        const textoH1 = document.createTextNode("Exercício 5.2 - JavaScript DOM");
+        elementoH1.appendChild(textoH1);
+        elementoBody.appendChild(elementoH1);
+
+        //Requisito - 2
+        const elementoDiv = document.createElement('div');
+        elementoDiv.setAttribute('class', 'main-content');
+        elementoDiv.style.backgroundColor = 'MediumSeaGreen';
+        elementoBody.appendChild(elementoDiv);
+
+        //Requisito - 3
+        let elementoDivChild = document.createElement('div');
+        elementoDivChild.setAttribute('class', 'center-content');
+        elementoDiv.appendChild(elementoDivChild);
+
+        //Requisito - 4
+        const elementoP = document.createElement('p');
+        const textoP = document.createTextNode("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum volutpat, libero vel rutrum mattis, enim lacus venenatis elit, nec pretium risus nibh quis nunc.");
+        elementoP.appendChild(textoP);
+        elementoDivChild.appendChild(elementoP);
+
+        //Requisito - 5
+        elementoDivChildLeftContent = document.createElement('div');
+        elementoDivChildLeftContent.setAttribute('class', 'left-content');
+        elementoDiv.appendChild(elementoDivChildLeftContent);
+
+        //Requisito - 6
+        const elementoDivChildRightContent = document.createElement('div');
+        elementoDivChildRightContent.setAttribute('class', 'right-content');
+        elementoDivChildRightContent.style.marginRight = 'auto';
+        elementoDiv.appendChild(elementoDivChildRightContent);
+
+        //Requisito - 7
+        const imagem = document.createElement('img');
+        imagem.setAttribute('src', 'https://picsum.photos/200');
+        imagem.setAttribute('class', 'small-image');
+        elementoDivChildLeftContent.appendChild(imagem);
+
+        //Requisito - 8
+        const lista = document.createElement('ul');
+        elementoDivChildRightContent.appendChild(lista);
+
+        for (let i = 0; i < 10; i++) {
+            const li = document.createElement('li');
+            li.innerText = i + 1;
+            lista.appendChild(li);
+        }
+
+        //Requisito - 9
+        for (let i = 0; i < 3; i++) {
+            const elementoH3 = document.createElement('h3');
+            elementoH3.setAttribute('class', 'description');
+            elementoH3.innerText = i + 1;
+            elementoDiv.appendChild(elementoH3);
+        }
+
+        //REMOVENDO O REQUISITO 5
+        for (let i = 0; i < elementoDiv.childNodes.length; i += 1) {
+            const elemento = elementoDiv.childNodes[i];
+
+            if (elemento.className === 'left-content') {
+                elementoDiv.removeChild(elemento);
+            }
+        }
+
+        //REMOVENDO OS ELEMENTOS NOVE E DEZ DA LISTA
+        for (let i = 0; i < lista.childNodes.length; i += 1) {
+            const elemento = lista.childNodes[i];
+
+            if (i + 1 === lista.childNodes.length - 1 || i + 1 === lista.childNodes.length) {
+                i -= 1;
+                lista.removeChild(elemento);
+            }
+        }
+    </script>
+</body>
+
+</html>
