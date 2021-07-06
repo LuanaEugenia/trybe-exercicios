@@ -107,7 +107,14 @@
         for (let i = 0; i < 10; i++) {
             const li = document.createElement('li');
             li.innerText = i + 1;
-            lista.append(li);
+            lista.appendChild(li);
+        }
+
+        //Requisito - 9
+        for (let i = 0; i < 3; i++) {
+            const elementoH3 = document.createElement('h3');
+            elementoH3.innerText = i + 1;
+            elementoDiv.appendChild(elementoH3);
         }
     </script>
 </body>
