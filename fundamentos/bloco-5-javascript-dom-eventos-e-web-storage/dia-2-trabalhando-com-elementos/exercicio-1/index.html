@@ -71,7 +71,7 @@
         //Requisito - 2
         const elementoDiv = document.createElement('div');
         elementoDiv.setAttribute('class', 'main-content');
-        elementoDiv.style.backgroundColor = 'green';
+        elementoDiv.style.backgroundColor = 'MediumSeaGreen';
         elementoBody.appendChild(elementoDiv);
 
         //Requisito - 3
@@ -91,9 +91,9 @@
         elementoDiv.appendChild(elementoDivChildLeftContent);
 
         //Requisito - 6
-        elementoDivChildRightContent = document.createElement('div');
+        const elementoDivChildRightContent = document.createElement('div');
         elementoDivChildRightContent.setAttribute('class', 'right-content');
-        elementoDivChildRightContent.style.marginRight='auto';
+        elementoDivChildRightContent.style.marginRight = 'auto';
         elementoDiv.appendChild(elementoDivChildRightContent);
 
         //Requisito - 7
@@ -121,11 +121,21 @@
         }
 
         //REMOVENDO O REQUISITO 5
-        for (let i = 0; i < elementoDiv.childNodes.length; i++) {
+        for (let i = 0; i < elementoDiv.childNodes.length; i += 1) {
             const elemento = elementoDiv.childNodes[i];
 
             if (elemento.className === 'left-content') {
                 elementoDiv.removeChild(elemento);
+            }
+        }
+
+        //REMOVENDO OS ELEMENTOS NOVE E DEZ DA LISTA
+        for (let i = 0; i < lista.childNodes.length; i += 1) {
+            const elemento = lista.childNodes[i];
+
+            if (i + 1 === lista.childNodes.length - 1 || i + 1 === lista.childNodes.length) {
+                i -= 1;
+                lista.removeChild(elemento);
             }
         }
     </script>
