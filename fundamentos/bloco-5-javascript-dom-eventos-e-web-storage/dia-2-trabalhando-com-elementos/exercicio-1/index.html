@@ -85,14 +85,20 @@
         elementoDivChild.appendChild(elementoP);
 
         //Requisito - 5
-        elementoDivChild = document.createElement('div');
-        elementoDivChild.setAttribute('class', 'left-content');
-        elementoDiv.appendChild(elementoDivChild);
+        elementoDivChildLeftContent= document.createElement('div');
+        elementoDivChildLeftContent.setAttribute('class', 'left-content');
+        elementoDiv.appendChild(elementoDivChildLeftContent);
 
         //Requisito - 6
         elementoDivChild = document.createElement('div');
         elementoDivChild.setAttribute('class', 'right-content');
         elementoDiv.appendChild(elementoDivChild);
+
+        //Requisito - 7
+        const imagem = document.createElement('img');
+        imagem.setAttribute('src', 'https://picsum.photos/200');
+        imagem.setAttribute('class', 'small-image');
+        elementoDivChildLeftContent.appendChild(imagem);
     </script>
 </body>
 
