@@ -85,7 +85,7 @@
         elementoDivChild.appendChild(elementoP);
 
         //Requisito - 5
-        elementoDivChildLeftContent= document.createElement('div');
+        elementoDivChildLeftContent = document.createElement('div');
         elementoDivChildLeftContent.setAttribute('class', 'left-content');
         elementoDiv.appendChild(elementoDivChildLeftContent);
 
@@ -113,8 +113,18 @@
         //Requisito - 9
         for (let i = 0; i < 3; i++) {
             const elementoH3 = document.createElement('h3');
+            elementoH3.setAttribute('class', 'description');
             elementoH3.innerText = i + 1;
             elementoDiv.appendChild(elementoH3);
+        }
+
+        //REMOVENDO O REQUISITO 5
+        for (let i = 0; i < elementoDiv.childNodes.length; i++) {
+            const elemento = elementoDiv.childNodes[i];
+
+            if (elemento.className === 'left-content') {
+                elementoDiv.removeChild(elemento);
+            }
         }
     </script>
 </body>
