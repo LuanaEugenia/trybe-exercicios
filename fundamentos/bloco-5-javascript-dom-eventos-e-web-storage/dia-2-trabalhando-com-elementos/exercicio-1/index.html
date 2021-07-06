@@ -58,7 +58,7 @@
 </head>
 
 <body>
-    
+
     <script>
         //Requisito - 1
         const elementoBody = document.body;
@@ -72,8 +72,14 @@
         //Requisito - 2
         const elementoDiv = document.createElement('div');
         elementoDiv.setAttribute('class', 'main-content');
-        
+
         elementoBody.appendChild(elementoDiv);
+
+        //Requisito - 3
+        const elementoDivChild = document.createElement('div');
+        elementoDivChild.setAttribute('class', 'center-content');
+        
+        elementoDiv.appendChild(elementoDivChild);
         
     </script>
 </body>
