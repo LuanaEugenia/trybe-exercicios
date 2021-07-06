@@ -64,23 +64,25 @@
         const elementoBody = document.body;
 
         const elementoH1 = document.createElement('h1');
-        const texto = document.createTextNode("Exercício 5.2 - JavaScript DOM");
-        elementoH1.appendChild(texto);
-
+        const textoH1 = document.createTextNode("Exercício 5.2 - JavaScript DOM");
+        elementoH1.appendChild(textoH1);
         elementoBody.appendChild(elementoH1);
 
         //Requisito - 2
         const elementoDiv = document.createElement('div');
         elementoDiv.setAttribute('class', 'main-content');
-
         elementoBody.appendChild(elementoDiv);
 
         //Requisito - 3
         const elementoDivChild = document.createElement('div');
         elementoDivChild.setAttribute('class', 'center-content');
-        
         elementoDiv.appendChild(elementoDivChild);
-        
+
+        //Requisito - 4
+        const elementoP = document.createElement('p');
+        const textoP = document.createTextNode("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum volutpat, libero vel rutrum mattis, enim lacus venenatis elit, nec pretium risus nibh quis nunc.");
+        elementoP.appendChild(textoP);
+        elementoDivChild.appendChild(elementoP);
     </script>
 </body>
 
