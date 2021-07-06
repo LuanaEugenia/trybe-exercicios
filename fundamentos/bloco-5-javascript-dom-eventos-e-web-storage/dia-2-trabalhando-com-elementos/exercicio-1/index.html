@@ -74,15 +74,20 @@
         elementoBody.appendChild(elementoDiv);
 
         //Requisito - 3
-        const elementoDivChild = document.createElement('div');
-        elementoDivChild.setAttribute('class', 'center-content');
-        elementoDiv.appendChild(elementoDivChild);
+        const elementoDivChildCenterContent = document.createElement('div');
+        elementoDivChildCenterContent.setAttribute('class', 'center-content');
+        elementoDiv.appendChild(elementoDivChildCenterContent);
 
         //Requisito - 4
         const elementoP = document.createElement('p');
         const textoP = document.createTextNode("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum volutpat, libero vel rutrum mattis, enim lacus venenatis elit, nec pretium risus nibh quis nunc.");
         elementoP.appendChild(textoP);
-        elementoDivChild.appendChild(elementoP);
+        elementoDivChildCenterContent.appendChild(elementoP);
+
+        //Requisito - 5
+        const elementoDivChildLeftContent = document.createElement('div');
+        elementoDivChildLeftContent.setAttribute('class', 'left-content');
+        elementoDiv.appendChild(elementoDivChildLeftContent);
     </script>
 </body>
 
