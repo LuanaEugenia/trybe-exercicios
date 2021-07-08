@@ -14,3 +14,7 @@ function createDaysOfTheWeek() {
 createDaysOfTheWeek();
 
   // Escreva seu código abaixo.
+
+    // ALTERANDO MÊS E ANO
+    document.getElementById('month').innerHTML = 'JULHO';
+    document.getElementById('year').innerHTML = '2021';
