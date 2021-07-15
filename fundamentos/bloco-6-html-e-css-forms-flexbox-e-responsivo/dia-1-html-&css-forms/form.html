@@ -10,8 +10,8 @@
 </head>
 
 <body>
-  <form action="" method="GET" class="fieldset">
-    <fieldset>
+  <form action="" method="GET">
+    <fieldset class="fieldset">
       <legend>Dados pessoais:</legend>
 
       <div class="style-dados-pessoais">
@@ -40,7 +40,29 @@
       </div>
 
       <label for="estados">Estados</label>
-      <select name="estados" id="estados"></select>
+      <select name="estados" id="estados" required></select>
+
+      <br><br>
+
+      <label for="casa">Casa</label>
+      <input type="radio" id="casa" required>
+
+      <label for="Apartamento">Apartamento</label>
+      <input type="radio" id="Apartamento" required>
+    </fieldset>
+
+    <fieldset class="fieldset">
+      <legend>Nos conte sobre o seu último emprego</legend>
+      <div>
+        <p>Faça um breve resumo do seu currículo</p>
+        <textarea name="text" id="resumo" required cols="55" rows="10"  maxlength="1000"></textarea>
+
+        <br><br>
+
+        <label for="cargo">Cargo</label>
+        <input type="text" id="cargo" required maxlength="40">
+        
+      </div>
     </fieldset>
   </form>
 
