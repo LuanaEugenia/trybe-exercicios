@@ -24,6 +24,7 @@ body {
 .menu-container {
   display: flex;
   flex-basis: 500px;
+  flex: 100px;
 }
 
 .menu-container ul {
@@ -38,6 +39,7 @@ body {
   font-size: 1.3rem;
   list-style: none;
   margin-right: 10px;
+  align-self: center;
 }
 
 
