@@ -1,0 +1,47 @@
+body {
+    font-size: 1em;
+    margin: 10px;
+}
+
+h1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+img {
+    width: 100%;
+}
+
+figure {
+    margin: 5px;
+    display: inline-block;
+}
+
+@media screen and (min-width: 500px) {
+    body {
+        font-size: 1.2em;
+        margin: 5px;
+        background-color: azure;
+    }
+
+    figure {
+        width: calc(50% - 12.5px);
+    }
+}
+
+@media screen and (min-width: 900px) {
+    body {
+        font-size: 1.4em;
+        margin: 0 auto;
+        max-width: 1200px;
+        background-color: bisque; 
+    }
+
+    figure {
+        width: calc(50% - 13px);
+    }
+}
