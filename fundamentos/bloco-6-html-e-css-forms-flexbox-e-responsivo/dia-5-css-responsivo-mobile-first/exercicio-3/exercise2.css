@@ -56,3 +56,10 @@ html {
     font-size: 1.2em;
   }
 }
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .aside {
+    display: flex;
+    justify-content: space-between;
+  }
+}
