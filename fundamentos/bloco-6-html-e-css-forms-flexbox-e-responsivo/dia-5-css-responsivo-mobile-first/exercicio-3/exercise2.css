@@ -2,6 +2,10 @@ html {
   box-sizing: border-box;
 }
 
+body {
+  background-color: #f0f0f0;
+}
+
 *,
 *:before,
 *:after {
@@ -13,6 +17,7 @@ html {
 .container {
   padding: 0 25px;
   max-width: 1300px;
+  margin: 0 auto;
 }
 
 .bc-gray {
@@ -61,5 +66,36 @@ html {
   .aside {
     display: flex;
     justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .menu p {
+    text-align: left;
+  }
+
+  .menu ul {
+    display: flex;
+  }
+
+  .menu li {
+    margin: 0 5px;
+    border-radius: 10px;
+  }
+
+  .menu li a {
+    padding: 10px 30px;
+    transition: all 1s;
+    transform: scale(1);
+  }
+
+  .menu li a:hover {
+    transform: scale(1.5);
   }
 }
