@@ -45,3 +45,8 @@ html {
   width: 100%;
   padding: 10px;
 }
+
+.footer {
+  padding: 10px 20px;
+  text-align: center;
+}
