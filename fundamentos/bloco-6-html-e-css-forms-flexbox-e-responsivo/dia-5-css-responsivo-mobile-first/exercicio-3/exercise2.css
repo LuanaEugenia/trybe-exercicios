@@ -15,6 +15,10 @@ html {
   max-width: 1300px;
 }
 
+.bc-gray {
+  background-color: #dddddd;
+}
+
 .menu {
   background-color: rgb(194, 152, 152);
 }
