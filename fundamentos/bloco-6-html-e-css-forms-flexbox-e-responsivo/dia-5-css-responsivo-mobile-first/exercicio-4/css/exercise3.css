@@ -94,3 +94,32 @@
     width: 100%;
   }
 }
+
+@media screen and (max-width: 570px) {
+  body {
+    padding: 0;
+  }
+
+  #content,
+  img {
+    width: 100%;
+  }
+
+  #aside {
+    display: none;
+  }
+
+  #content-container,
+  #footer,
+  #navigation,
+  #content,
+  #navigation li a {
+    float: none;
+  }
+
+  #header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 5px;
+  }
+}
