@@ -22,4 +22,9 @@ const adicionarTurnoLesson2 = (objeto, chave, valor) => {
   objeto[chave] = valor;
 }
 
+const listarKeys = (objeto) => {
+  return Object.keys(objeto);
+}
+
 adicionarTurnoLesson2(lesson2, 'turno', 'matutino');
+listarKeys(lesson2);
