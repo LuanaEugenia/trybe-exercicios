@@ -60,6 +60,14 @@ const obterValorObjetoPosicao = (objeto, valorChave) => {
   return valores[valorChave];
 }
 
+const verificarChaveValor = (objeto, chave, valor) => {
+  if (objeto[chave] === undefined) {
+    return false;
+  }
+
+  return objeto[chave] === valor;
+}
+
 adicionarTurnoLesson2(lesson2, 'turno', 'matutino');
 console.log(lesson2);
 console.log(listarKeys(lesson2));
@@ -69,3 +77,4 @@ agruparAulas();
 const quantidadeAlunos = obterQuantidadeDeAlunos(allLessons);
 console.log(`A quantidade de aluno é ${quantidadeAlunos}.`);
 console.log(obterValorObjetoPosicao(lesson1, 0));
+console.log(verificarChaveValor(lesson3, 'turno', 'noite'));
