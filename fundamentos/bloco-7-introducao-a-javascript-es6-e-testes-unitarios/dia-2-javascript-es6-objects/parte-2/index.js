@@ -39,7 +39,20 @@ const listarValoresObjeto = (objeto) => {
 
 const apruparAulas = () => {
   Object.assign(allLessons, { lesson1 }, { lesson2 }, { lesson3 });
-  console.log(allLessons);
+  console.table(allLessons);
+}
+
+const obterQuantidadeDeAlunos = (objeto) => {
+  let quantidadeAlunos = 0;
+
+  for (const chave in objeto) {
+    if (Object.hasOwnProperty.call(objeto, chave)) {
+      const lesson = objeto[chave];
+      quantidadeAlunos += lesson.numeroEstudantes;
+    }
+  }
+
+  return quantidadeAlunos;
 }
 
 adicionarTurnoLesson2(lesson2, 'turno', 'matutino');
@@ -47,3 +60,5 @@ listarKeys(lesson2);
 mostrarTamanhoObjeto(lesson2);
 listarValoresObjeto(lesson2);
 apruparAulas();
+const quantidadeAlunos = obterQuantidadeDeAlunos(allLessons);
+console.log(`A quantidade de aluno é ${quantidadeAlunos}.`);
