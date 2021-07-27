@@ -18,6 +18,8 @@ const lesson3 = {
   turno: 'noite',
 };
 
+const allLessons = {};
+
 const adicionarTurnoLesson2 = (objeto, chave, valor) => {
   objeto[chave] = valor;
 }
@@ -35,7 +37,13 @@ const listarValoresObjeto = (objeto) => {
   return Object.values(objeto)
 }
 
+const apruparAulas = () => {
+  Object.assign(allLessons, { lesson1 }, { lesson2 }, { lesson3 });
+  console.log(allLessons);
+}
+
 adicionarTurnoLesson2(lesson2, 'turno', 'matutino');
 listarKeys(lesson2);
 mostrarTamanhoObjeto(lesson2);
 listarValoresObjeto(lesson2);
+apruparAulas();
