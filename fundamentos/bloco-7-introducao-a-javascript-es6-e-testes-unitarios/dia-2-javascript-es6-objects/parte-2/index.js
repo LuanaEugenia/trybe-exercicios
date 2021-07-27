@@ -37,7 +37,7 @@ const listarValoresObjeto = (objeto) => {
   return Object.values(objeto)
 }
 
-const apruparAulas = () => {
+const agruparAulas = () => {
   Object.assign(allLessons, { lesson1 }, { lesson2 }, { lesson3 });
   console.table(allLessons);
 }
@@ -55,10 +55,17 @@ const obterQuantidadeDeAlunos = (objeto) => {
   return quantidadeAlunos;
 }
 
+const obterValorObjetoPosicao = (objeto, valorChave) => {
+  const valores = Object.values(objeto);
+  return valores[valorChave];
+}
+
 adicionarTurnoLesson2(lesson2, 'turno', 'matutino');
-listarKeys(lesson2);
+console.log(lesson2);
+console.log(listarKeys(lesson2));
 mostrarTamanhoObjeto(lesson2);
-listarValoresObjeto(lesson2);
-apruparAulas();
+console.log(listarValoresObjeto(lesson2));
+agruparAulas();
 const quantidadeAlunos = obterQuantidadeDeAlunos(allLessons);
 console.log(`A quantidade de aluno é ${quantidadeAlunos}.`);
+console.log(obterValorObjetoPosicao(lesson1, 0));
