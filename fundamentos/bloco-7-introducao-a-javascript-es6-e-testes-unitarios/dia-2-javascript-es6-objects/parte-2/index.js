@@ -31,6 +31,11 @@ const mostrarTamanhoObjeto = (objeto) => {
   console.log(chaves.length);
 }
 
+const listarValoresObjeto = (objeto) => {
+  return Object.values(objeto)
+}
+
 adicionarTurnoLesson2(lesson2, 'turno', 'matutino');
 listarKeys(lesson2);
 mostrarTamanhoObjeto(lesson2);
+listarValoresObjeto(lesson2);
