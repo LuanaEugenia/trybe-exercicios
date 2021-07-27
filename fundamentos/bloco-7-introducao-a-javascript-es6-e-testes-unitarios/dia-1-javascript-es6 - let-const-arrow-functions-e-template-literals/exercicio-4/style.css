@@ -1,0 +1,22 @@
+body {
+  background-color: darksalmon;
+}
+
+.button {
+  padding: 10px;
+  border: none;
+  box-shadow: 0 0 10px 0 #aaaaaa;
+  border-radius: 10px;
+}
+
+.button:active {
+  box-shadow: 0 0 10px 5px #aaaaaa;
+}
+
+.m-10 {
+  margin: 10px;
+}
+
+.result {
+  font-size: 2em;
+}
