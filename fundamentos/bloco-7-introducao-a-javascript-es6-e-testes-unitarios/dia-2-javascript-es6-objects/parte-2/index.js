@@ -68,6 +68,22 @@ const verificarChaveValor = (objeto, chave, valor) => {
   return objeto[chave] === valor;
 }
 
+const obterQuantidadeDeAlunosMatematica = (objeto) => {
+  let quantidadeAlunos = 0;
+
+  for (const chave in objeto) {
+    if (Object.hasOwnProperty.call(objeto, chave)) {
+      const lesson = objeto[chave];
+
+      if (lesson.materia === 'Matemática') {
+        quantidadeAlunos += lesson.numeroEstudantes;
+      }
+    }
+  }
+
+  return quantidadeAlunos;
+}
+
 adicionarTurnoLesson2(lesson2, 'turno', 'matutino');
 console.log(lesson2);
 console.log(listarKeys(lesson2));
@@ -78,3 +94,5 @@ const quantidadeAlunos = obterQuantidadeDeAlunos(allLessons);
 console.log(`A quantidade de aluno é ${quantidadeAlunos}.`);
 console.log(obterValorObjetoPosicao(lesson1, 0));
 console.log(verificarChaveValor(lesson3, 'turno', 'noite'));
+const quantidadeAlunosQueAssistiramAulaDeMatematica = obterQuantidadeDeAlunosMatematica(allLessons);
+console.log(`Quantidade de alunos que assistiram a aulas de matemática: ${quantidadeAlunosQueAssistiramAulaDeMatematica}`);
