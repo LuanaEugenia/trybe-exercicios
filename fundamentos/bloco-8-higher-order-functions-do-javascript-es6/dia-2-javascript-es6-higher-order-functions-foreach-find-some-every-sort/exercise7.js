@@ -64,7 +64,7 @@ const books = [
 ];
 
 const expectedResult = false;
-
+// Eu não consegui resolver essa questão. Peguei a resposta no Gabarito da |Trybe.
 function authorUnique() {
   return books.every((book) =>
     !books.some((bookSome) =>
