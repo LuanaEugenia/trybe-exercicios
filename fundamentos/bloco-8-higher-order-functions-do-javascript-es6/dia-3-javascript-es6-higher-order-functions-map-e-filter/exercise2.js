@@ -107,6 +107,4 @@ function nameAndAge() {
     });
 }
 
-console.log(nameAndAge());
-
 assert.deepStrictEqual(nameAndAge(), expectedResult);
