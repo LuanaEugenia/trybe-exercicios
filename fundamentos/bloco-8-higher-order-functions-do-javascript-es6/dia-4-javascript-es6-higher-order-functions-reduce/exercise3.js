@@ -63,25 +63,14 @@ const books = [
   },
 ];
 
-const expectedResult = {
-  id: 1,
-  name: 'As Crônicas de Gelo e Fogo',
-  genre: 'Fantasia',
-  author: {
-    name: 'George R. R. Martin',
-    birthYear: 1948,
-  },
-  releaseYear: 1991,
-};
+const expectedResult = 43;
 
-function longestNamedBook() {
-  return books.reduce((selectedBook, currentBook) => {
-    if (selectedBook.name.length < currentBook.name.length) {
-      return currentBook;
-    }
-
-    return selectedBook;
-  });
+function averageAge() {
+  return (
+    books
+      .map((book) => book.releaseYear - book.author.birthYear)
+      .reduce((acumulador, idade) => acumulador + idade) / books.length
+  );
 }
 
-assert.deepStrictEqual(longestNamedBook(), expectedResult);
+assert.strictEqual(averageAge(), expectedResult);
