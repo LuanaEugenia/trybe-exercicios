@@ -24,7 +24,7 @@ const sendMarsTemperature = (success, error) => {
 
   setTimeout(() => {
     if (sentSuccess) {
-      success(temperature)
+      success(temperature);
     } else {
       error('Sinal fraco!!!');
     }
