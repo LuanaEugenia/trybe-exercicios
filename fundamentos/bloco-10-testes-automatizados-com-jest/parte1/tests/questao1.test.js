@@ -1,4 +1,4 @@
-const {sum} = require('./questao1');
+const {sum} = require('../questao1');
 
 
 describe('Questão 1', () => {
@@ -14,6 +14,7 @@ describe('Questão 1', () => {
   });
 
   test('retorna erro quando os parâmetros não são do tipo numérico', () => {
+    expect(() => sum(4, '5')).toThrow();
     expect(() => sum(4, '5')).toThrowError(new Error('parameters must be numbers'));
   });
 });
