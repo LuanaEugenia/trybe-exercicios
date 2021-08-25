@@ -30,12 +30,4 @@ describe('Questão 4', () => {
 
     expect(resultado).not.toBeTruthy();
   });
-
-
-  // test('quando o item não existe no array, o array é retornado sem alterações', () => {
-  //   const array = [1, 2, 3, 4];
-  //   const resultado  = myRemoveWithoutCopy(array, 5);
-
-  //   expect(resultado).toBe(array);
-  // });
 });
