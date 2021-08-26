@@ -1,6 +1,6 @@
 const {obj1, obj2, obj3} = require('../questao5');
 
-describe('Questão 5', () => {
+describe('Parte 1 - Questão 5', () => {
   test('comparando se o objeto 1 é igual ao objeto 2', () => {
     const resultado  = obj1;
 

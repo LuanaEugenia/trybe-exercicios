@@ -1,6 +1,6 @@
 const {myRemoveWithoutCopy} = require('../questao3');
 
-describe('Questão 3', () => {
+describe('Parte 1 - Questão 3', () => {
   test('remove um item do array e retorna um novo array sem aquele item', () => {
     const array = [1, 2, 3, 4];
     const resultado  = myRemoveWithoutCopy(array, 3);

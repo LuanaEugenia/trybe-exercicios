@@ -1,6 +1,6 @@
 const {myFizzBuzz} = require('../questao4');
 
-describe('Questão 4', () => {
+describe('Parte 1 - Questão 4', () => {
   test('A função myFizzBuzz(num) recebe um número num e retorna "fizzbuzz" se o número for divisível por 3 e 5 ', () => {
     const resultado  = myFizzBuzz(15);
 

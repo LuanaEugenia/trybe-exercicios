@@ -1,7 +1,7 @@
 const {sum} = require('../questao1');
 
 
-describe('Questão 1', () => {
+describe('Parte 1 - Questão 1', () => {
   test('retorna 9 quando funcionar', () => {
     const resultado  = sum(4, 5);
 
