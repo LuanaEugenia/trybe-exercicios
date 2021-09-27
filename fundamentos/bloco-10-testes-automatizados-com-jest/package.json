@@ -1,0 +1,17 @@
+{
+  "name": "bloco-10-testes-automatizados-com-jest",
+  "version": "1.0.0",
+  "description": "Testes automatizados com Jest",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "tests",
+    "jest"
+  ],
+  "author": "Luana Eugênia",
+  "devDependencies": {
+    "jest": "^27.0.6"
+  }
+}
