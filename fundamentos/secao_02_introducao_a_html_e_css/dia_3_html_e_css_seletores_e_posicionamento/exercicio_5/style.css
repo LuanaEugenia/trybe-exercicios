@@ -1,0 +1,58 @@
+#list-ol-yellow {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+.par li:nth-child(2n) {
+    color: green;
+}
+
+.impar li:nth-child(odd) {
+    text-transform: uppercase;
+}
+
+.h-red  {
+    color: red;
+}
+
+h1.h-red {
+    font-size: 40px; 
+    border: 1px black solid;
+}
+
+li {
+    font-size: 20px;
+}
+
+.li-prog li:nth-child(-n+3) {
+    color: rgb(11, 129, 226);
+}
+
+.li_jv-pink {
+    background-color: pink;
+}
+
+.orange:hover{
+    color: orangered;
+    font-weight: bold;
+}
+
+.green:hover{
+    color: green;
+    font-weight: bold;
+}
+
+.black:hover{
+    color: black;
+    font-weight: bold;
+}
+
+.yellow:hover {
+    color: yellow;
+    font-weight: bold;
+}
+
+.green:hover {
+    color: rgb(29, 190, 29);
+    font-weight: bold;
+}

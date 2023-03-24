@@ -1,0 +1,21 @@
+h1, p, li {
+    text-align: center;
+}
+
+p {
+    font-weight: bold;
+}
+
+li:hover {
+    background-color: rgb(221, 123, 172);
+}
+
+li:active {
+    background-color: forestgreen;
+}
+
+li {
+    list-style: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
