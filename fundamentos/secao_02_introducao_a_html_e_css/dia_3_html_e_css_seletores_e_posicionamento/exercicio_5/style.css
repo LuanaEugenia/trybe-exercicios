@@ -3,7 +3,10 @@ ol li {
 }
 
 .par li:nth-child(2n) {
-    background-color: green;
+    color: green;
 }
 
+.impar li:nth-child(odd) {
+    text-transform: uppercase;
+}
 
