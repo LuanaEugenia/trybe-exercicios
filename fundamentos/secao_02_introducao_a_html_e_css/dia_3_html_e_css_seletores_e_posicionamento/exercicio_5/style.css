@@ -1,4 +1,4 @@
-ol li {
+#list-ol-yellow {
     background-color: yellow;
 }
 
@@ -8,5 +8,9 @@ ol li {
 
 .impar li:nth-child(odd) {
     text-transform: uppercase;
+}
+
+.h-red {
+    color: red;
 }
 
