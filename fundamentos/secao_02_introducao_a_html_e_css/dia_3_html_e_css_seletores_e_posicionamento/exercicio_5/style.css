@@ -32,7 +32,27 @@ li {
     background-color: pink;
 }
 
-a:hover{
+.orange:hover{
+    color: orangered;
     font-weight: bold;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.green:hover{
+    color: green;
+    font-weight: bold;
+}
+
+.black:hover{
+    color: black;
+    font-weight: bold;
+}
+
+.yellow:hover {
+    color: yellow;
+    font-weight: bold;
+}
+
+.green:hover {
+    color: rgb(29, 190, 29);
+    font-weight: bold;
 }
