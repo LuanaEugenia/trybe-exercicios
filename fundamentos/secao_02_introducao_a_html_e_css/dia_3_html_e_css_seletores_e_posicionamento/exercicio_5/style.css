@@ -1,5 +1,6 @@
 #list-ol-yellow {
     background-color: yellow;
+    font-weight: bold;
 }
 
 .par li:nth-child(2n) {
