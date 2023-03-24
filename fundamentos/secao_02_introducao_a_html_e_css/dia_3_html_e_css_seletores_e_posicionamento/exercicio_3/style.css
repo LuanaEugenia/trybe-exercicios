@@ -1,5 +1,9 @@
-h1, p {
-    align-items: center;
+h1, p, li {
+    text-align: center;
+}
+
+p {
+    font-weight: bold;
 }
 
 li:hover {
@@ -12,4 +16,6 @@ li:active {
 
 li {
     list-style: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
 }
