@@ -2,4 +2,8 @@ ol li {
     background-color: yellow;
 }
 
+.par li:nth-child(2n) {
+    background-color: green;
+}
+
 
