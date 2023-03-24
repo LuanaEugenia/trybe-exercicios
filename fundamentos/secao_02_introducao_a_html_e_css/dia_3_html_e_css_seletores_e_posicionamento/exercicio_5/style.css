@@ -10,7 +10,12 @@
     text-transform: uppercase;
 }
 
-.h-red {
+.h-red  {
     color: red;
+}
+
+h1.h-red {
+    font-size: 40px; 
+    border: 1px black solid;
 }
 
