@@ -5,3 +5,14 @@ let info = {
   };
 
   console.log('Bem-vinda, ' +info.personagem+ '!');
+
+  let novaChave = 'recorrente';
+  let valorChave = 'sim';
+
+  addInfo(info, novaChave, valorChave);
+
+  function addInfo(objeto, chave, valor) {
+    objeto[chave] = valor;
+  }
+
+  console.log(info);
