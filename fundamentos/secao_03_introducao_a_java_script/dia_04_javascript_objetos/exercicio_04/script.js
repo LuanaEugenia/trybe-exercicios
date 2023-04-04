@@ -5,6 +5,7 @@ let info = {
   };
 
   console.log('Bem-vinda, ' +info.personagem+ '!');
+  console.log('***************************************');
 
   let novaChave = 'recorrente';
   let valorChave = 'sim';
@@ -15,4 +16,6 @@ let info = {
     objeto[chave] = valor;
   }
 
-  console.log(info);
+  for(let i in info) {
+    console.log(i);
+  }
