@@ -10,3 +10,8 @@ const filhoElementoOndeVoceEsta = document.createElement('section');
 filhoElementoOndeVoceEsta.id = 'filhoElementoOndeVoceEsta';
 elementoOndeVoceEsta.appendChild(filhoElementoOndeVoceEsta);
 
+//Crie um filho para `primeiroFilhoDoFilho`.
+const primeiroFilhoDoFilho = document.getElementById('primeiroFilhoDoFilho');
+const filhoDoPrimeiroFilhoDoFilho = document.createElement('section');
+filhoDoPrimeiroFilhoDoFilho.id = 'filhoDoPrimeiroFilhoDoFilho';
+primeiroFilhoDoFilho.appendChild(filhoDoPrimeiroFilhoDoFilho);
