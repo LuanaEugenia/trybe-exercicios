@@ -62,14 +62,17 @@
     // COLOQUE SEU CÓDIGO AQUI
     //  Adicione a tag h1 com o texto TrybeTrip - Agência de Viagens como filho da tag body;
     const body = document.getElementsByTagName('body')[0];
-    const tagH1 = document.createElement('h1');
-    tagH1.innerHTML = 'TrybeTrip - Agência de Viagens';
-    body.appendChild(tagH1);
+    const h1 = document.createElement('h1');
+    h1.innerHTML = 'TrybeTrip - Agência de Viagens';
+    body.appendChild(h1);
     //Adicione a tag main com a classe main-content como filho da tag body;
-    const tagMain = document.createElement('main');
-    tagMain.className = 'main-content';
-    body.appendChild(tagMain);
-
+    const main = document.createElement('main');
+    main.className = 'main-content';
+    body.appendChild(main);
+    //Adicione a tag section com a classe center-content como filho da tag main criada no passo 2;
+    const section = document.createElement('section');
+    section.className = 'center-content';
+    main.appendChild(section);
   </script>
 </body>
 
