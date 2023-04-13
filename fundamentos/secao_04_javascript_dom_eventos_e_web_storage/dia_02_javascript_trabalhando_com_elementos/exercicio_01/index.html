@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <main id="parent-of-parent">
+        <section id="parent">
+            <section id="first-child"></section>
+            <section id="where-are-you">
+                <section id="first-child-of-child"></section>
+            </section>
+            Attention!
+            <section id="third-child"></section>
+            <section id="fourth-and-last-child"></section>
+        </section>
+    </main>
+    <script>
+        const whereAreYou = document.getElementById('where-are-you');
+        const parente = whereAreYou.parentNode;
+        const firstChildOfChild = document.getElementById('first-child-of-child');
+        
+        firstChildOfChild.innerHTML = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce finibus in quam a sollicitudin.';
+        parente.style.color = 'red';
+        parente.firstChild;
+        whereAreYou.firstChild; 
+        whereAreYou.nextSibling;
+        whereAreYou.nextElementSibling;
+        parente.lastElementChild.previousElementSibling;
+    </script>    
+</body>
+
+</html>
