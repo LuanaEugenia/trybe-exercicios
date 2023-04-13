@@ -77,13 +77,19 @@
     const p = document.createElement('p');
     section.appendChild(p);
     //Adicione a tag section com a classe left-content como filho da tag main criada no passo 2;
-    const segundaTagSection = document.createElement('section');
-    segundaTagSection.className = 'left-content';
-    main.appendChild(segundaTagSection);
+    const sectionLeftContent = document.createElement('section');
+    sectionLeftContent.className = 'left-content';
+    main.appendChild(sectionLeftContent);
     //Adicione a tag section com a classe right-content como filho da tag main criada no passo 2;
-    const terceiraTagSection = document.createElement('section');
-    terceiraTagSection.className = 'right-content';
-    main.appendChild(terceiraTagSection);
+    const sectionRightContent = document.createElement('section');
+    sectionRightContent.className = 'right-content';
+    main.appendChild(sectionRightContent);
+    // Adicione uma imagem com src configurado para valor https://picsum.photos/200 e classe small-image. Esse elemento deve ser filho do section criado no passo 5;
+    const img = document.createElement('img');
+    img.src = 'https://picsum.photos/200';
+    img.className = 'small-image';
+    sectionLeftContent.appendChild(img);
+
   </script>
 </body>
 
