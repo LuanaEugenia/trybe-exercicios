@@ -19,9 +19,14 @@ window.onload = () => {
     const paragraph = document.querySelector('.paragraph');
     paragraph.style.lineHeight = lineHeight;
   }
-    // Tipo da fonte (Font family).
-    const setFontFamily = (fontFamily) => {
-      const paragraph = document.querySelector('.paragraph');
-      paragraph.style.fontFamily = fontFamily;
-    }
+  // Tipo da fonte (Font family).
+  const setFontFamily = (fontFamily) => {
+    const paragraph = document.querySelector('.paragraph');
+    paragraph.style.fontFamily = fontFamily;
+  }
+
+  const buttonBackground = document.getElementById('background-color');
+  buttonBackground.addEventListener('click', (event) => {
+    setColorBackgound(event.target.innerText);
+  })
 }
