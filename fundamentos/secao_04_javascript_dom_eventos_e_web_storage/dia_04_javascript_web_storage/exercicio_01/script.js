@@ -39,4 +39,9 @@ window.onload = () => {
   buttonFontSize.addEventListener('click', (event) => {
     setFontSize(event.target.innerText);
   })
+
+  const buttonLineHeight = document.getElementById('line-height');
+  buttonLineHeight.addEventListener('click', (event) => {
+    setLineHeight(event.target.innerText);
+  })
 }
