@@ -34,4 +34,9 @@ window.onload = () => {
   buttonColor.addEventListener('click', (event) => {
     setColorText(event.target.innerText);
   })
+
+  const buttonFontSize = document.getElementById('font-size');
+  buttonFontSize.addEventListener('click', (event) => {
+    setFontSize(event.target.innerText);
+  })
 }
