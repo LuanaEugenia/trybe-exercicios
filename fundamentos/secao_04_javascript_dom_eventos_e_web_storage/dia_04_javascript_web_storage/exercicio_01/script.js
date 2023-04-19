@@ -13,9 +13,13 @@ window.onload = () => {
   const setFontSize = (size) => {
     const paragraph = document.querySelector('.paragraph');
     paragraph.style.fontSize = size;
-    
-  }
 
+  }
   // Espaçamento entre as linhas do texto;
-  // Tipo da fonte (Font family).
+  const setLineHeight = (lineHeight) => {
+    const paragraph = document.querySelector('.paragraph');
+    paragraph.style.lineHeight = lineHeight;
+
+  }
+    // Tipo da fonte (Font family).
 }
