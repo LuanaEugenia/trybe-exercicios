@@ -44,4 +44,9 @@ window.onload = () => {
   buttonLineHeight.addEventListener('click', (event) => {
     setLineHeight(event.target.innerText);
   })
+
+  const buttonFontFamily = document.getElementById('font-family');
+  buttonFontFamily.addEventListener('click', (event) => {
+    setFontFamily(event.target.innerText);
+  })
 }
