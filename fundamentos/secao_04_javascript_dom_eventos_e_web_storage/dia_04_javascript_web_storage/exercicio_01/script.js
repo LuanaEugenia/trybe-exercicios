@@ -29,4 +29,9 @@ window.onload = () => {
   buttonBackground.addEventListener('click', (event) => {
     setColorBackgound(event.target.innerText);
   })
+
+  const buttonColor = document.getElementById('font-color');
+  buttonColor.addEventListener('click', (event) => {
+    setColorText(event.target.innerText);
+  })
 }
