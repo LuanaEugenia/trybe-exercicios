@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Formulario-TrybeTrip</title>
+</head>
+
+<body>
+  <header class="mx-auto p-2">
+    <h1>Concorra à Viagem dos seus sonhos com a TrybeTrip</h1>
+  </header>
+  <form class="container">
+    <fieldset>
+      <section class="mb-3">
+        <div class="row mb-2">
+          <label for="fullName" class="col-sm-1 col-form-label fs-3">Nome:</label>
+          <div class="col-sm-10">
+            <input type="text" id="fullName" class="form-control form-control-lg" name="fullName" placeholder="Digite seu nome completo"
+              maxlength="40" minlength="10" required>
+          </div>
+        </div>
+        <div class="row mb-2">
+          <label for="email" class="col-sm-1 col-form-label fs-4">E-mail:</label>
+          <div class="col-sm-10">
+            <input type="email" id="email" class="form-control form-control-lg  " name="email" placeholder="Digite seu e-mail"
+              maxlength="50" minlength="10" required>
+          </div>
+        </div>
+      </section>
+      <div class="abs.img"><img src="image/airplane.svg" alt=""></div>
+      <section>
+        <div class="row mb-2">
+          <legend class="col-sm-2 fs-4">Lugares:</legend>
+      
+          <div class="col-sm-3 ">
+            <div class="form-check mb-3">
+              <label for="destination1" class="form-check-label">Cidade</label>
+              <input type="checkbox" id="destination1" className="form-check-input" name="destinations" value="Cidade" required>
+            </div>
+
+            <div class="form-check mb-3">
+              <label for="destination2" class="form-check-label">Campo</label>
+              <input type="checkbox" id="destination2" className="form-check-input" name="destinations" value="Campo"
+                required>
+            </div>
+
+            <div class="form-check mb-3">
+              <label for="destination3" class="form-check-label">Praia</label>
+              <input type="checkbox" id="destination3" className="form-check-input" name="destinations" value="Praia"
+                required>
+            </div>
+
+            <div class="form-check mb-3">
+              <label for="destination4" class="form-check-label">Montanhas</label>
+              <input type="checkbox" id="destination4" className="form-check-input" name="destinations" value="Montanhas"
+                required>
+            </div>
+          </div>
+        </div>
+      </section>
+      <br />
+      <div class="abs.img"><img src="image/airplane.svg" alt=""></div>
+      <label for="why" class="fs-4">Por que você deveria ser a pessoa desenvolvedora escolhida pelo concurso TrybeTrip?</label>
+      <br />
+      <textarea name="why" id="why" cols="60" rows="10" class="form-control form-control-lg mb-3"
+        placeholder="Digite sua resposta vencedora aqui"></textarea>
+      <br />
+
+      <label for="date" class="mb-5 fs-4">Qual a melhor data para realizar sua viagem?</label>
+      <input type="date" id="date">
+      <br />
+
+      <label for="promo" class="mb-5 fs-4 form-check-label">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe.</label>
+      <input type="checkbox" name="promo" id="promo" class="form-check-input" >
+      <br />
+
+      <label for="agreement" class="mb-5 fs-4 form-check-label">Concordo que imagens de minhas férias poderão ser usadas na divulgação de concursos
+        futuros.</label> 
+      <input type="checkbox" name="agreement" class="form-check-input" id="agreement" required>
+    </fieldset>
+
+    <div  class="d-flex justify-content-evenly">
+      <button type="submit" id="submit-btn" class="btn btn-outline-secondary btn-lg">Participar do concurso TrybeTrip</button>
+    <button type="button" id="clear-btn" class="btn btn-outline-secondary btn-lg" >Apagar informações</button>
+    </div>
+  </form>
+  <script src="bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script> 
+  
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+body {
+    background: rgb(9,147,26);
+background: linear-gradient(0deg, rgba(9,147,26,0.5144432773109244) 26%, rgba(131,253,45,0.37718837535014005) 80%);
+}
+
+h1 {
+    text-align: center;
+    padding: 15px;
+}
+
+label {
+    font-size: 25px;
+}
+
+img {
+    width: 30px;
+}
+
+.abs.img {
+    position: absolute;
+}
