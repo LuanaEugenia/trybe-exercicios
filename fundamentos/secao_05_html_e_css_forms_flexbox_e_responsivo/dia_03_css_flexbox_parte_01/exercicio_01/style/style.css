@@ -9,10 +9,14 @@
     width: 30%;
   }
 
-  .box-container {
+  /* .box-container {
     background-color: #0fa36b;
     display: flex;
     flex-direction: row; 
-  }
+  } */
 
-  
+.box-container {
+    background-color: #0fa36b;
+    display: flex;
+    flex-wrap: wrap-reverse; 
+  }  
