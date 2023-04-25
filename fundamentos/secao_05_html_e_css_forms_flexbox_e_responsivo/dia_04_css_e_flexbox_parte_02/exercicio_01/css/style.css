@@ -18,12 +18,14 @@
     display: flex;
     flex-basis: 268px;
     justify-content: center;
+    flex-grow: 1;
     order: 1;
   }
   
   .menu-container {
     display: flex;
     flex-basis: 500px;
+    flex-grow: 40;
     order: 2;
   }
   
