@@ -26,6 +26,7 @@
     display: flex;
     flex-basis: 500px;
     flex-grow: 40;
+    align-self: center;
     order: 2;
   }
   
