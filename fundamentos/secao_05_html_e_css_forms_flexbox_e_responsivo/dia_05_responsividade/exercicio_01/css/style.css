@@ -79,3 +79,9 @@ body {
     }
   }
 
+  @media screen and (min-width: 650px) and (max-width: 950px) {
+    .cards div {
+        order: 3;
+        display: none;
+    }
+  }
