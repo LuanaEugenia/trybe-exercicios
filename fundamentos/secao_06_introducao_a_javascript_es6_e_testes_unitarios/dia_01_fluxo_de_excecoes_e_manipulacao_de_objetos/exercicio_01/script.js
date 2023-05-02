@@ -122,11 +122,27 @@ const findPersonByName = (name) => {
   }
 };
 
-console.log(findPersonByName('Ana'));
-
 const findPersonByPosition = (position) => {
-  // seu código aqui
-};
+  let cliente;
+  let email;
+
+  try {
+    for (let i = 0; i < clients.length; i += 1) {
+      if (position === i) {
+        cliente = clients[position].name;
+        email = clients[position].email;
+      }
+    }
+    
+    if (position > clients.length) {
+      throw new Error('Posição inválida, tente novamente');
+    }
+
+   return (`Cliente: ${cliente}. E-mail: ${email}`);
+  } catch (erro) {
+    return erro.message;
+  }
+}
 
 const findPeopleByState = (state) => {
   // seu código aqui
