@@ -76,7 +76,7 @@ const clients = [
       number: 1415,
       neighborhood: 'Botafogo',
       city: 'Rio de Janeiro',
-      state: 'RJ',
+      state: 'MG',
       cep: '56789-012',
     },
   },
@@ -145,5 +145,21 @@ const findPersonByPosition = (position) => {
 }
 
 const findPeopleByState = (state) => {
-  // seu código aqui
+  let pessoasDoMesmoEstado = [];
+
+  try {
+    for (let i = 0; i < clients.length; i += 1) {
+      if (state === clients[i].address.state) {
+        pessoasDoMesmoEstado.push(clients[i].name);
+      }  
+    }
+
+    if (!state) {
+      throw new Error ('Ops, nenhuma pessoa mora nesse estado, tente outro');
+    }
+
+    return pessoasDoMesmoEstado;
+  } catch (erro) {
+    return erro.message
+  }
 };
