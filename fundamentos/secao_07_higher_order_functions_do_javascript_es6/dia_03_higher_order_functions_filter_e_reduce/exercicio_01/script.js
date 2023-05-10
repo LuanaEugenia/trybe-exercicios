@@ -66,6 +66,12 @@ const countries = [
   }
 ];
 
+const names = [
+  'Aanemarie', 'Adervandes', 'Akifusa',
+  'Abegildo', 'Adicellia', 'Aladonata',
+  'Abeladerco', 'Adieidy', 'Alarucha',
+];
+
 const getPopulation = () => {
   return countries.reduce((acc, poulacaoAtual) => acc + poulacaoAtual.population, 0);
 };
@@ -76,6 +82,15 @@ const getTotalArea = () => {
 
 const longestName = () => {
   return countries.reduce((paisComMaiorNome, paisAtual) =>
-  paisComMaiorNome.name.length > paisAtual.name.length ?
-    paisComMaiorNome : paisAtual);
+    paisComMaiorNome.name.length > paisAtual.name.length ?
+      paisComMaiorNome : paisAtual);
 };
+
+const countA = () => {
+  return names.reduce((acc, palavraAtual) => acc + palavraAtual)
+    .split('')
+    .reduce((acc, letraAtual) => letraAtual === 'a' || letraAtual === 'A' ? acc + letraAtual : acc, '')
+    .length;
+};
+
+console.log(countA());
