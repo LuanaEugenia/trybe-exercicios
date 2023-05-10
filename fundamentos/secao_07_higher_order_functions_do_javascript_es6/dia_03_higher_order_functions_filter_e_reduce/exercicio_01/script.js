@@ -66,12 +66,16 @@ const countries = [
   }
 ];
 
-// const expectedResult = 120797034;
 const getPopulation = () => {
-  return countries.reduce((acc, countrie) => acc + countrie.population, 0);
-}
+  return countries.reduce((acc, poulacaoAtual) => acc + poulacaoAtual.population, 0);
+};
 
-// const expectedResult = 4311757;
 const getTotalArea = () => {
- return countries.reduce((acc, countrie) => acc + countrie.area, 0);
-}
+  return countries.reduce((acc, areaAtual) => acc + areaAtual.area, 0);
+};
+
+const longestName = () => {
+  return countries.reduce((paisComMaiorNome, paisAtual) =>
+  paisComMaiorNome.name.length > paisAtual.name.length ?
+    paisComMaiorNome : paisAtual);
+};
