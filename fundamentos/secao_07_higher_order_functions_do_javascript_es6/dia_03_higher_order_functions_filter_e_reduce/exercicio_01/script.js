@@ -72,6 +72,14 @@ const names = [
   'Abeladerco', 'Adieidy', 'Alarucha',
 ];
 
+const students = ['Pedro Henrique', 'Miguel', 'Maria Clara'];
+const grades = [[9, 8, 10, 7, 5], [10, 9, 9, 10, 8], [10, 7, 10, 8, 9]];
+const expectedResult = [
+ { name: 'Pedro Henrique', average: 7.8 },
+ { name: 'Miguel', average: 9.2 },
+ { name: 'Maria Clara', average: 8.8 },
+];
+
 const getPopulation = () => {
   return countries.reduce((acc, poulacaoAtual) => acc + poulacaoAtual.population, 0);
 };
@@ -93,4 +101,11 @@ const countA = () => {
     .length;
 };
 
-console.log(countA());
+const studentAverage = () => {
+  return mediaAluno = students.map((student, i) => (
+    {
+      name: student,
+      average:(grades[i].reduce((acc, notaAtual) => acc + notaAtual, 0) / grades[i].length),
+    }
+  ));
+};
