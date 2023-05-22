@@ -11,7 +11,6 @@
   "license": "ISC",
   "dependencies": {
     "@trybe/eslint-config-frontend": "^1.11.2",
-    "clipboard-copy": "^4.0.1",
     "nanoid": "^4.0.2",
     "vite": "^4.3.8"
   },
