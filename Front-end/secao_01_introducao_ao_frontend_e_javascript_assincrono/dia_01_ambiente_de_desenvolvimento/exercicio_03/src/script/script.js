@@ -14,4 +14,3 @@ buttonValidation.addEventListener('click', (event) => {
 
     message.innerHTML = `A validação retornou ${validateEmailOrCpf(option.value, textElement.value)}`;
 });
-
