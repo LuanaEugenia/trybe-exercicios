@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "dev": "vite --open ./src/index.html"
+  },
+  "dependencies": {
+    "vite": "^4.3.8"
+  },
+  "type": "module"
+}
