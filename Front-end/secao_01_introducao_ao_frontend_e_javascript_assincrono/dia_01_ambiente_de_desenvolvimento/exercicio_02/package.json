@@ -1,0 +1,21 @@
+{
+  "name": "dia_01_ambiente_de_desenvolvimento",
+  "version": "1.0.0",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite --open ./src/index.html"
+  },
+  "keywords": [],
+  "author": "Luana Eugênia",
+  "license": "ISC",
+  "dependencies": {
+    "@trybe/eslint-config-frontend": "^1.11.2",
+    "nanoid": "^4.0.2",
+    "vite": "^4.3.8"
+  },
+  "type": "module",
+  "devDependencies": {
+    "eslint": "^8.41.0"
+  }
+}
