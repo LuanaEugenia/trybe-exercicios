@@ -9,6 +9,7 @@ import {
 } from '../utils/updateUI';
 
 const usersSelect = document.querySelector('#users-select');
+const relatedPosts = document.querySelector('#related-posts-section');
 
 // faça a lógica para pegar as informações das pessoas usuárias e preencher o select aqui.
 const USERS_API = 'https://dummyjson.com/users';
